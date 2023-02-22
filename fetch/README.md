@@ -1,3 +1,11 @@
+# Fetching data from GitHub
+
+This directory contains Go scripts to fetch raw data from GitHub via GitHub REST APIs.
+
+## Setup
+
+You need to have Go installed. See [https://golang.org/doc/install](https://golang.org/doc/install) for instructions.
+
 ## Auth
 
 This package uses [go-gh](https://github.com/cli/go-gh) with default auth.
@@ -26,13 +34,13 @@ The tool implements some flags to batch requests to GitHub and sleep between con
 If you are fetching a lot of data (at the current rate of CI data generation, anything more than a couple days worth of CI data), you can get good results with
 
 ```sh
-    go run .\main.go -outdir ..\data\raw -batch 50 -after 2022-11-02
+    go run main.go -outdir ../data/raw -batch 50 -after 2022-11-02
 ```
 
 to fetch all the data for CI runs since 2022-11-02, or
 
 ```sh
-    go run .\main.go -outdir ..\data\raw -batch 50 -after 2022-11-02 -before 2022-12-02
+    go run main.go -outdir ../data/raw -batch 50 -after 2022-11-02 -before 2022-12-02
 ```
 
 to fetch all data for CI runs between 2022-11-02 and 2022-12-02.

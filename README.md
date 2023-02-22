@@ -5,7 +5,7 @@ An analysis of browser test health in the CI for [Azure Communication Services U
 ## Snapshot ❗❓
 
 This repository is a a ~ single git-sha snapshot of an earlier repository at
-https://github.com/prprabhu-ms/acr-e2e-analysis
+<https://github.com/prprabhu-ms/acr-e2e-analysis>
 
 Objects in `data/*` are so large that they must be stored in [GitHub's gitLFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) and repeatedly updating those items costs 💲. I deleted that repository and left this snapshot for posterity.
 
